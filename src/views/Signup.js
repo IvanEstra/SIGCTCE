@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {municipios,hidalgo} from '../../data/data';
+import {municipios,hidalgo} from '../data/data';
 
 class Signup extends Component{
 
