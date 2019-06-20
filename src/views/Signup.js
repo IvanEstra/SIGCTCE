@@ -1,7 +1,9 @@
 import React,{Component} from 'react';
-import {municipios,hidalgo} from '../data/data';
+import {municipios,hidalgo} from '../../data/data';
+import { NEW_USER_ACTION } from '../../redux/actions/UsersAction';
+import { connect } from 'react-redux';
 
-class Registro extends Component{
+class Signup extends Component{
 
     constructor(props) {
         super(props);
@@ -85,7 +87,6 @@ class Registro extends Component{
             
     }
 
-
     render(){
         return(
             <section className="container">
@@ -96,8 +97,8 @@ class Registro extends Component{
                                 <span className="login100-form-title-1">Registrate</span>
                             </div>
 
-                            <div className="text-center w-100" style={{paddingTop:"15px"}}>
-                                <img className="rounded hidalgo" src="Image/Logo.png" alt="IHJ Logo"/>
+                            <div className="text-center" style={{paddingTop:"15px"}}>
+                                <img className="rounded hidalgo" src="../images/logo_hidalgo.png" alt="IHJ Logo"/>
                             </div>
 
                             <form className="needs-validation login100-form" noValidate>
@@ -321,4 +322,18 @@ class Registro extends Component{
     }
 }
 
-export default Registro;
+const mapStateToProps = ({responseNewUser}) => {
+    return {
+        responseNewUser: responseNewUser
+    };
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        sendUser: (nombre,app,apm,edad,sexo,telefono,municipio,cp,colonia,calle,numExt,email,password,area,level,active) => dispatch(NEW_USER_ACTION(nombre,app,apm,edad,sexo,telefono,municipio,cp,colonia,calle,numExt,email,password,area,level,active))
+    };
+};
+
+const ConnectSignup = connect(mapStateToProps,mapDispatchToProps)(Signup);
+
+export default ConnectSignup;
