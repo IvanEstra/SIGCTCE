@@ -4,16 +4,25 @@ class Principal extends Component {
         return (
 
 <div className="container" style={{marginTop:30}}>
-             <div className="row justify-content-center" >
-                        <div className="col-12 col-md-7" id="navegador">
-                            <ul>
-                            <li><a href="#">Talleres</a></li>
-                            <li><a href="#">Cusos</a></li>
-                            <li><a href="#">Usuarios</a></li>
-                            <li><a href="#">Beneficiarios</a></li>
-                            </ul>
-                        </div>
-             </div>
+    <div className="row justify-content-center" >    
+            <div className="">
+                <nav className="menu">
+                    <ul>
+                        <li><a href="#">Talleres</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Usuarios</a></li>
+                        <li><a href="#">Beneficiarios</a></li>
+                    </ul>
+                </nav>
+            </div> 
+            <div className="row justify-content-end">
+            <div class="col-4">
+            <a href="#" className="icon-user-plus" style={{fontSize:"25px"}}>Agregar</a>
+            </div>
+         </div> 
+        </div>
+        
+
                 <hr class="red small-margin"/><br/><br/><br/>
 
             <div className="row justify-content-center">
@@ -22,7 +31,7 @@ class Principal extends Component {
                 <thead>
                     <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Fecha</th>
+                    <th scope="col"> Fecha</th>
                     <th scope="col">Nombre</th>
                     <th scope="col">Ponente</th>
                     <th scope="col">Ver</th>
@@ -37,13 +46,13 @@ class Principal extends Component {
                     <td>Taller de Fotografia digital Nivel Basico</td>
                     <td>Rodrigo</td>
                     <td>
-                    <a href="#" class="badge badge-primary">Ver</a>
+                    <a href="#" class="badge badge-primary icon-eye">Ver</a>
                     </td>
                     <td>
-                    <a href="#" class="badge badge-warning">Modificar</a>
+                    <a href="#" class="badge badge-warning icon-pencil">Modificar</a>
                     </td>
                     <td>
-                    <a href="#" class="badge badge-danger">Eliminar</a>
+                    <a href="#" class="badge badge-danger icon-bin">Eliminar</a>
                     </td>
                     </tr>
                    
@@ -77,13 +86,13 @@ class Principal extends Component {
                     <td>Taller de Producción de Video</td>
                     <td>Elizabeth</td>
                     <td>
-                    <a href="#" class="badge badge-primary">Ver</a>
+                    <a href="#" class="badge badge-primary icon-eye">Ver</a>
                     </td>
                     <td>
-                    <a href="#" class="badge badge-warning">Modificar</a>
+                    <a href="#" class="badge badge-warning icon-pencil">Modificar</a>
                     </td>
                     <td>
-                    <a href="#" class="badge badge-danger">Eliminar</a>
+                    <a href="#" class="badge badge-danger icon-bin">Eliminar</a>
                     </td>
                     </tr>
                    
@@ -100,7 +109,7 @@ class Principal extends Component {
     <thead>
         <tr>
         <th scope="col">#</th>
-        <th scope="col">Fecha</th>
+        <th scope="col">Fecha </th>
         <th scope="col">Nombre</th>
         <th scope="col">Ponente</th>
         <th scope="col">Ver</th>
@@ -115,13 +124,13 @@ class Principal extends Component {
         <td>Taller de Cómic y Narrativa Gráfica nivel básico</td>
         <td>Elizabeth</td>
         <td>
-        <a href="#" class="badge badge-primary">Ver</a>
+        <a href="#" class="badge badge-primary icon-eye">Ver</a>
         </td>
         <td>
-        <a href="#" class="badge badge-warning">Modificar</a>
+        <a href="#" class="badge badge-warning icon-pencil">Modificar</a>
         </td>
         <td>
-        <a href="#" class="badge badge-danger">Eliminar</a>
+        <a href="#" class="badge badge-danger icon-bin">Eliminar</a>
         </td>
         </tr>
        
