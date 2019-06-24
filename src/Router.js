@@ -6,6 +6,7 @@ import Principal from './views/Principal';
 import User from './views/User';
 import Beneficiarios from './views/Beneficiarios';
 import NumBene from './views/NumBene';
+import ListUser from './views/ListUser';
 
 
 class Router extends Component{
@@ -19,6 +20,7 @@ class Router extends Component{
                 <Route path="/user" component={User} />
                 <Route path="/beneficiarios" component={Beneficiarios}/>
                 <Route path="/numbene" component={NumBene} />
+                <Route path="/listuser" component={ListUser}/>
                 
             </Switch>
         );
