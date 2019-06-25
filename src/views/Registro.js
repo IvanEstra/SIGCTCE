@@ -106,7 +106,7 @@ class Registro extends Component{
                                     <label htmlFor="nombre">Nombre(s): </label>
                                     <input 
                                         type="text" className="form-control" 
-                                        id="nombre" name="nombre" required
+                                        id="name" name="nombre" required
                                         placeholder="Tu nombre aqui ..."
                                         onChange={this.handleInputChange}
                                     />
@@ -119,7 +119,7 @@ class Registro extends Component{
                                     <label htmlFor="app">Apellido Paterno: </label>
                                     <input 
                                         type="text" className="form-control" 
-                                        id="app" name="app" required
+                                        id="ApPa" name="app" required
                                         placeholder="Tu apellido aqui ..."
                                         onChange={this.handleInputChange}
                                     />
@@ -132,7 +132,7 @@ class Registro extends Component{
                                     <label htmlFor="apm">Apellido Materno: </label>
                                     <input 
                                         type="text" className="form-control" 
-                                        id="apm" name="apm" required
+                                        id="ApMa" name="apm" required
                                         placeholder="Tu apellido aqui ..."
                                         onChange={this.handleInputChange}
                                     />
@@ -145,7 +145,7 @@ class Registro extends Component{
                                     <label htmlFor="edad">Edad: </label>
                                     <input 
                                         type="number" className="form-control" 
-                                        id="edad" name="edad" required
+                                        id="Edad" name="edad" required
                                         placeholder="Tu edad aqui ..."
                                         onChange={this.handleInputChange}
                                     />
@@ -170,7 +170,7 @@ class Registro extends Component{
                                     <label htmlFor="telefono">Telefono: </label>
                                     <input 
                                         type="text" className="form-control" 
-                                        id="telefono" name="telefono" required
+                                        id="Telefono" name="telefono" required
                                         placeholder="Tu telefono aqui ..."
                                         onChange={this.handleInputChange}
                                     />
@@ -182,7 +182,7 @@ class Registro extends Component{
                                 <div className="col-12 col-lg-6 mb-3">
                                     <label htmlFor="municipio">Municipio: </label>
                                     <div className="form-group">
-                                        <select className="custom-select" id="municipio" name="municipio" onChange={this.handleInputChange} required>
+                                        <select className="custom-select" id="Municipio" name="municipio" onChange={this.handleInputChange} required>
                                             <option value="">Selecciona un municipio</option>
                                             {municipios.map((item,index) => {
                                                 return(<option value={item.name} key={index}>{item.name}</option>);
@@ -208,7 +208,7 @@ class Registro extends Component{
                                 <div className="col-12 col-lg-6 mb-3">
                                     <label htmlFor="colonia">Colonia: </label>
                                     <div className="form-group">
-                                        <select className="custom-select" id="colonia" name="colonia" onChange={this.handleInputChange} required>
+                                        <select className="custom-select" id="Colonia" name="colonia" onChange={this.handleInputChange} required>
                                             <option value="">Selecciona una colonia</option>
                                             {this.state.colonias.map((item,index) => {
                                                 return(<option value={item} key={index}>{item}</option>);

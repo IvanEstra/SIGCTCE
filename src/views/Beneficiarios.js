@@ -27,9 +27,12 @@ class Beneficiarios extends Component {
                     <th scope="col">Nombre</th>
                     <th scope="col">Apellido Paterno</th>
                     <th scope="col">Apellido Materno</th>
-                    <th scope="col">Email</th>
+                    <th scope="col">Fecha de Nacimiento</th>
+                    <th scope="col">Edad</th>
                     <th scope="col">Sexo</th>
+                    <th scope="col">Telefono</th>
                     <th scope="col">Curp</th>
+                    <th scope="col">Correo</th>
                     <th scope="col">Editar</th>
                     <th scope="col">Eliminar</th>
                     </tr>
@@ -37,12 +40,15 @@ class Beneficiarios extends Component {
                 <tbody>
                     <tr>
                     <th scope="row">1</th>
-                    <td>Jose Manuel</td>
+                    <td>Manuel</td>
                     <td>Carrasco</td>
                     <td>Martinez</td>
-                    <td>Carras42@gmail.com</td>
+                    <td>12/10/1998</td>
+                    <td>21</td>
                     <td>H</td>
+                    <td>5578498315</td>
                     <td>CAMJ900421HCHRRN05</td>
+                    <td>Carras42@gmail.com</td>
                     <td>
                     <a href="#" className="badge badge-warning icon-pencil">Modificar</a>
                     </td>
@@ -50,15 +56,19 @@ class Beneficiarios extends Component {
                     <a href="#" className="badge badge-danger icon-bin">Eliminar</a>
                     </td>
                     </tr>
-
+                </tbody>
+                <tbody>
                     <tr>
                     <th scope="row">2</th>
-                    <td>Liliana</td>
-                    <td>Gonzales</td>
-                    <td>Linares</td>
-                    <td>LiliG@gmail.com</td>
+                    <td>Perla</td>
+                    <td>Arias</td>
+                    <td>Hernandéz</td>
+                    <td>27/07/1997</td>
+                    <td>22</td>
                     <td>M</td>
-                    <td>GOLP850729MCHNNR03</td>
+                    <td>5578498315</td>
+                    <td>AIHP911101MCHRRR03</td>
+                    <td>Perlita@gmail.com</td>
                     <td>
                     <a href="#" className="badge badge-warning icon-pencil">Modificar</a>
                     </td>
@@ -66,7 +76,6 @@ class Beneficiarios extends Component {
                     <a href="#" className="badge badge-danger icon-bin">Eliminar</a>
                     </td>
                     </tr>
-                   
                 </tbody>
                 </table>
                 </div>
