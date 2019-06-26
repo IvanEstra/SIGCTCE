@@ -96,7 +96,7 @@ class Registro extends Component{
                                 <span className="login100-form-title-1">Registrate</span>
                             </div>
 
-                            <div className="text-center w-100" style={{paddingTop:"15px"}}>
+                            <div className="text-center  w-100" style={{paddingTop:"15px"}}>
                                 <img className="rounded hidalgo" src="Image/Logo.png" alt="IHJ Logo"/>
                             </div>
 
